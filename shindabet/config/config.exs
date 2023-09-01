@@ -20,6 +20,13 @@ config :shindabet, ShindabetWeb.Endpoint,
   pubsub_server: Shindabet.PubSub,
   live_view: [signing_salt: "H0l6CAc3"]
 
+#configures Guardian
+
+config :shindabet, ShindabetWeb.Guardian,
+issuer: "shindabet",
+secret_key: "/8kHm4JDCSao9/49olkbTS7nN/z687YEM0bGjv1IphnoVMMkNKQN3rYR02XSCunx"
+
+
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails
